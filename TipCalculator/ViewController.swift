@@ -10,17 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // User input bill value.
     @IBOutlet weak var billValue: UITextField!
+    // Calcualted total bill value.
     @IBOutlet weak var totalValue: UILabel!
+    // Calculated tip value.
     @IBOutlet weak var tipValue: UILabel!
+    // Multiple tip percentages displayed at the center of the screen.
     @IBOutlet weak var selectTipPercentage: UISegmentedControl!
     
+    // Money per person if the bill is splited by four people.
     @IBOutlet weak var fourPeopleSplitValue: UILabel!
+    // Money per person if the bill is splited by three people.
     @IBOutlet weak var threePeopleSplitValue: UILabel!
+    // Money per person if the bill is splited by two people.
     @IBOutlet weak var twoPeopleSplitValue: UILabel!
-    
+    // UIView that displayed all the results.
     @IBOutlet weak var resultView: UIView!
-    
+    // Array that stores all tip values.nn
     var tipPercentages = [0.18, 0.2, 0.25]
     
     override func viewDidLoad() {
@@ -35,6 +42,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Update the tips displayed based on the value in user defaults.
         let userDefaults = UserDefaults.standard
         let firstTipOption = userDefaults.integer(forKey: "firstTipOption")
         let secondTipOption = userDefaults.integer(forKey: "secondTipOption")
@@ -75,6 +83,7 @@ class ViewController: UIViewController {
         // Retrieve the bill value.
         let bill = Double(billValue.text!) ?? 0
     
+        // Calculate tip value and total.
         let tip = bill * tipPercentages[selectTipPercentage.selectedSegmentIndex]
         let total = bill + tip
         
@@ -89,8 +98,9 @@ class ViewController: UIViewController {
         fourPeopleSplitValue.text = String(format: "$%.2f", fourPeopleSplit)
     }
     
+    // Add fade in animation to resultView when the bill value field is clicked.
     @IBAction func animateResultView(_ sender: Any) {
-        UIView.animate(withDuration: 1.5, animations: {
+        UIView.animate(withDuration: 2, animations: {
             self.resultView.alpha += 0.8
         })
     }
