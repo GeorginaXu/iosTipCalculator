@@ -24,7 +24,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<a href="https://github.com/GeorginaXu/iosTipCalculator/blob/master/TipCalculatorDemo.gif"></a>
+<img src='https://github.com/GeorginaXu/iosTipCalculator/blob/master/TipCalculatorDemo.gif' title='Georgina Xu - TipCalculatorDemo' width='' alt='Georgina Xu - TipCalculatorDemo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
