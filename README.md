@@ -4,7 +4,7 @@
 
 Submitted by: **Georgina Xu**
 
-Time spent: **4** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## User Stories
 
@@ -16,11 +16,15 @@ The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
 * [ ] UI animations
 
+The following **additional** features are implemented:
+* [ ] Changed colors and layout to make the UI more appealing
+* [ ] Added bill splits for two people, three people, and four people
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://drive.google.com/file/d/1iK8OB1xKd98oG_2vYmV_rK2OuepnMNTc/view?usp=sharing' title='Georgina Xu - TipCalculatorDemo'/>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
